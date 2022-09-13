@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+
+}
+
+@font-face {
+    font-family: 'candara';
+    src: url(./fonts/Candara.ttf);
+}
+
+.botao{
+    border: 0;
+    border-radius: 4px;
+    padding: 8px;
+    background: linear-gradient(90deg, rgba(58,180,162,1) 0%, rgba(29,248,253,1) 50%, rgba(69,101,252,1) 100%);
+    cursor: pointer;
+    margin: 8px;
+    
+}
+.botao i{
+    color: #fff;
+}
+
+.overlay{
+    height: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(58,180,162,1) 0%, rgba(29,248,253,1) 50%, rgba(69,101,252,1) 100%);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+
+}
+.overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'candara';
+   
+    
+  
+  
+}
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 35px;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+    color: #fff;
+    
+}
+
+.overlay-content a:hover{
+    background-color: rgb(45, 41, 168);
+    padding: 20px 5px;
+}
+.overlay .closebtn{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+}
